@@ -1,16 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class Node : MonoBehaviour {
+public class Node
+{
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public bool Walkable;
+    public Vector3 WorldPosition;
+
+    public Node(bool walkable, Vector3 worldPosition)
+    {
+        Walkable = walkable;
+        WorldPosition = worldPosition;
+    }
 }
