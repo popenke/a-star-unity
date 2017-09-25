@@ -468,6 +468,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ea0f6357d0794eb5bb39138e217b264, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  UnwalkableMask:
+    serializedVersion: 2
+    m_Bits: 256
+  GridWorldSize: {x: 30, y: 30}
+  NodeRadius: 0.5
 --- !u!1 &1191837553
 GameObject:
   m_ObjectHideFlags: 0

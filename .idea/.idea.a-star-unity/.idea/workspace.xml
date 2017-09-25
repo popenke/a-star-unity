@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d791c3c-bdf7-4313-a831-c5f8e8c81d1b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Node.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Node.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Grid.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Grid.cs" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,7 +26,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Node.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Node.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Node.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
@@ -39,18 +39,48 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Grid.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="882">
+              <caret line="49" column="5" lean-forward="true" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
+              <folding>
+                <marker date="1506379296000" expanded="true" signature="53:1623" ph="{...}" />
+                <marker date="1506379296000" expanded="true" signature="282:500" ph="{...}" />
+                <marker date="1506379296000" expanded="true" signature="533:925" ph="{...}" />
+                <marker date="1506379296000" expanded="true" signature="666:919" ph="{...}" />
+                <marker date="1506379296000" expanded="true" signature="717:909" ph="{...}" />
+                <marker date="1506379296000" expanded="true" signature="956:1621" ph="{...}" />
+                <marker date="1506379296000" expanded="true" signature="1202:1615" ph="{...}" />
+                <marker date="1506379296000" expanded="true" signature="1261:1605" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>j</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>x</replace>
+      <replace>y</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Grid.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Node.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Node.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Grid.cs" />
       </list>
     </option>
   </component>
@@ -61,10 +91,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="209" />
-    <option name="y" value="65" />
-    <option name="width" value="1440" />
-    <option name="height" value="808" />
+    <option name="width" value="1920" />
+    <option name="height" value="1079" />
   </component>
   <component name="ProjectView">
     <navigator currentView="SolutionExplorer" proportions="" version="1">
@@ -150,12 +178,12 @@
       <option name="presentableId" value="Default" />
       <updated>1506377117467</updated>
       <workItem from="1506377122526" duration="21000" />
-      <workItem from="1506377181017" duration="299000" />
+      <workItem from="1506377181017" duration="2028000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="320000" />
+    <option name="totallyTimeSpent" value="2049000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -167,7 +195,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="209" y="65" width="1440" height="808" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1079" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -178,7 +206,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -221,6 +249,23 @@
           <folding>
             <marker date="1506377448000" expanded="true" signature="37:237" ph="{...}" />
             <marker date="1506377448000" expanded="true" signature="155:235" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="882">
+          <caret line="49" column="5" lean-forward="true" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
+          <folding>
+            <marker date="1506379296000" expanded="true" signature="53:1623" ph="{...}" />
+            <marker date="1506379296000" expanded="true" signature="282:500" ph="{...}" />
+            <marker date="1506379296000" expanded="true" signature="533:925" ph="{...}" />
+            <marker date="1506379296000" expanded="true" signature="666:919" ph="{...}" />
+            <marker date="1506379296000" expanded="true" signature="717:909" ph="{...}" />
+            <marker date="1506379296000" expanded="true" signature="956:1621" ph="{...}" />
+            <marker date="1506379296000" expanded="true" signature="1202:1615" ph="{...}" />
+            <marker date="1506379296000" expanded="true" signature="1261:1605" ph="{...}" />
           </folding>
         </state>
       </provider>
