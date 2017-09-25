@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d791c3c-bdf7-4313-a831-c5f8e8c81d1b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.a-star-unity/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.a-star-unity/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Grid.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Grid.cs" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,17 +43,18 @@
       <file leaf-file-name="Grid.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="882">
-              <caret line="49" column="5" lean-forward="true" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
+            <state relative-caret-position="661">
+              <caret line="52" column="74" lean-forward="false" selection-start-line="52" selection-start-column="74" selection-end-line="52" selection-end-column="74" />
               <folding>
-                <marker date="1506379296000" expanded="true" signature="53:1623" ph="{...}" />
-                <marker date="1506379296000" expanded="true" signature="282:500" ph="{...}" />
-                <marker date="1506379296000" expanded="true" signature="533:925" ph="{...}" />
-                <marker date="1506379296000" expanded="true" signature="666:919" ph="{...}" />
-                <marker date="1506379296000" expanded="true" signature="717:909" ph="{...}" />
-                <marker date="1506379296000" expanded="true" signature="956:1621" ph="{...}" />
-                <marker date="1506379296000" expanded="true" signature="1202:1615" ph="{...}" />
-                <marker date="1506379296000" expanded="true" signature="1261:1605" ph="{...}" />
+                <marker date="1506380407000" expanded="true" signature="53:2111" ph="{...}" />
+                <marker date="1506380407000" expanded="true" signature="282:500" ph="{...}" />
+                <marker date="1506380407000" expanded="true" signature="533:925" ph="{...}" />
+                <marker date="1506380407000" expanded="true" signature="666:919" ph="{...}" />
+                <marker date="1506380407000" expanded="true" signature="717:909" ph="{...}" />
+                <marker date="1506380407000" expanded="true" signature="984:1409" ph="{...}" />
+                <marker date="1506380407000" expanded="true" signature="1444:2109" ph="{...}" />
+                <marker date="1506380407000" expanded="true" signature="1690:2103" ph="{...}" />
+                <marker date="1506380407000" expanded="true" signature="1749:2093" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -170,6 +172,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="3d791c3c-bdf7-4313-a831-c5f8e8c81d1b" name="Default" comment="" />
@@ -178,12 +183,12 @@
       <option name="presentableId" value="Default" />
       <updated>1506377117467</updated>
       <workItem from="1506377122526" duration="21000" />
-      <workItem from="1506377181017" duration="2028000" />
+      <workItem from="1506377181017" duration="3100000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2049000" />
+    <option name="totallyTimeSpent" value="3121000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -255,17 +260,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
-          <caret line="49" column="5" lean-forward="true" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
+        <state relative-caret-position="661">
+          <caret line="52" column="74" lean-forward="false" selection-start-line="52" selection-start-column="74" selection-end-line="52" selection-end-column="74" />
           <folding>
-            <marker date="1506379296000" expanded="true" signature="53:1623" ph="{...}" />
-            <marker date="1506379296000" expanded="true" signature="282:500" ph="{...}" />
-            <marker date="1506379296000" expanded="true" signature="533:925" ph="{...}" />
-            <marker date="1506379296000" expanded="true" signature="666:919" ph="{...}" />
-            <marker date="1506379296000" expanded="true" signature="717:909" ph="{...}" />
-            <marker date="1506379296000" expanded="true" signature="956:1621" ph="{...}" />
-            <marker date="1506379296000" expanded="true" signature="1202:1615" ph="{...}" />
-            <marker date="1506379296000" expanded="true" signature="1261:1605" ph="{...}" />
+            <marker date="1506380407000" expanded="true" signature="53:2111" ph="{...}" />
+            <marker date="1506380407000" expanded="true" signature="282:500" ph="{...}" />
+            <marker date="1506380407000" expanded="true" signature="533:925" ph="{...}" />
+            <marker date="1506380407000" expanded="true" signature="666:919" ph="{...}" />
+            <marker date="1506380407000" expanded="true" signature="717:909" ph="{...}" />
+            <marker date="1506380407000" expanded="true" signature="984:1409" ph="{...}" />
+            <marker date="1506380407000" expanded="true" signature="1444:2109" ph="{...}" />
+            <marker date="1506380407000" expanded="true" signature="1690:2103" ph="{...}" />
+            <marker date="1506380407000" expanded="true" signature="1749:2093" ph="{...}" />
           </folding>
         </state>
       </provider>
