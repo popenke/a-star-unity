@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 public class Grid : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class Grid : MonoBehaviour
         CreateGrid();
     }
 
+    public List<Node> path;
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireCube(transform.position, new Vector3(GridWorldSize.x, 1, GridWorldSize.y));
@@ -27,9 +29,44 @@ public class Grid : MonoBehaviour
             foreach (Node node in _grid)
             {
                 Gizmos.color = (node.Walkable) ? Color.white : Color.red;
+                if (path != null)
+                {
+                    if (path.Contains(node))
+                    {
+                        Gizmos.color = Color.black;
+                    }
+                }
                 Gizmos.DrawCube(node.WorldPosition, Vector3.one * (_nodeDiameter - .1f));
             }
         }
+    }
+
+    public List<Node> GetNeighbours(Node node)
+    {
+        List<Node> neighbours = new List<Node>();
+
+        for (int x = -1; x < 1; x++)
+        {
+            for (int y = -1; y < 1; y++)
+            {
+                if (x == 0 && y == 0)
+                {
+                    continue;
+                }
+                else
+                {
+                    int checkX = node.GridX + x;
+                    int checkY = node.GridY + y;
+
+                    if (checkX >= 0 && checkX < _gridSizeX && checkY >= 0 && checkY < _gridSizeY)
+                    {
+                        neighbours.Add(_grid[checkX, checkY]);
+                    }
+                }
+            }
+        }
+
+        return neighbours;
     }
 
     public Node NodeFromWorldPoint(Vector3 worldPosition)
@@ -45,7 +82,7 @@ public class Grid : MonoBehaviour
 
         return _grid[x, y];
     }
-    
+
     private void CreateGrid()
     {
         _grid = new Node[_gridSizeX, _gridSizeY];
@@ -56,9 +93,10 @@ public class Grid : MonoBehaviour
         {
             for (int y = 0; y < _gridSizeY; y++)
             {
-                Vector3 worldPoint = worldBottomLeft + Vector3.right * (x * _nodeDiameter + NodeRadius) + Vector3.forward * (y * _nodeDiameter + NodeRadius);
+                Vector3 worldPoint = worldBottomLeft + Vector3.right * (x * _nodeDiameter + NodeRadius) +
+                                     Vector3.forward * (y * _nodeDiameter + NodeRadius);
                 bool walkable = !(Physics.CheckSphere(worldPoint, NodeRadius, UnwalkableMask));
-                _grid[x, y] = new Node(walkable, worldPoint);
+                _grid[x, y] = new Node(walkable, worldPoint, x, y);
             }
         }
     }
