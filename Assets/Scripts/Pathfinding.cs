@@ -1,10 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class Pathfinding : MonoBehaviour
 {
-
     public Transform Seeker, Target;
     private Grid _grid;
 
@@ -22,7 +20,7 @@ public class Pathfinding : MonoBehaviour
     {
         Node startNode = _grid.NodeFromWorldPoint(startPosition);
         Node targetNode = _grid.NodeFromWorldPoint(targetPosition);
-        
+
         List<Node> openSet = new List<Node>();
         HashSet<Node> closedSet = new HashSet<Node>();
         openSet.Add(startNode);
@@ -32,7 +30,8 @@ public class Pathfinding : MonoBehaviour
             Node currentNode = openSet[0];
             for (int i = 1; i < openSet.Count; i++)
             {
-                if (openSet[i].FCost < currentNode.FCost || openSet[i].FCost == currentNode.FCost && openSet[i].HCost < currentNode.HCost)
+                if (openSet[i].FCost < currentNode.FCost ||
+                    openSet[i].FCost == currentNode.FCost && openSet[i].HCost < currentNode.HCost)
                 {
                     currentNode = openSet[i];
                 }
@@ -82,12 +81,12 @@ public class Pathfinding : MonoBehaviour
             path.Add(currentNode);
             currentNode = currentNode.Parent;
         }
-        
+
         path.Reverse();
 
-        _grid.path = path;
+        _grid.Path = path;
     }
-    
+
     private int GetDistance(Node nodeA, Node nodeB)
     {
         int distanceX = Mathf.Abs(nodeA.GridX - nodeB.GridX);

@@ -11,7 +11,7 @@ public class Grid : MonoBehaviour
     private float _nodeDiameter;
     private int _gridSizeX, _gridSizeY;
 
-    private void Start()
+    private void Awake()
     {
         _nodeDiameter = NodeRadius * 2;
         _gridSizeX = Mathf.RoundToInt(GridWorldSize.x / _nodeDiameter);
@@ -19,7 +19,8 @@ public class Grid : MonoBehaviour
         CreateGrid();
     }
 
-    public List<Node> path;
+    public List<Node> Path;
+
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireCube(transform.position, new Vector3(GridWorldSize.x, 1, GridWorldSize.y));
@@ -29,9 +30,9 @@ public class Grid : MonoBehaviour
             foreach (Node node in _grid)
             {
                 Gizmos.color = (node.Walkable) ? Color.white : Color.red;
-                if (path != null)
+                if (Path != null)
                 {
-                    if (path.Contains(node))
+                    if (Path.Contains(node))
                     {
                         Gizmos.color = Color.black;
                     }
