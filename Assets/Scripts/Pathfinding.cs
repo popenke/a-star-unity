@@ -52,19 +52,17 @@ public class Pathfinding : MonoBehaviour
                 {
                     continue;
                 }
-                else
-                {
-                    int newMovementCostToNeighbour = currentNode.GCost + GetDistance(currentNode, neighbour);
-                    if (newMovementCostToNeighbour < neighbour.GCost || !openSet.Contains(neighbour))
-                    {
-                        neighbour.GCost = newMovementCostToNeighbour;
-                        neighbour.HCost = GetDistance(neighbour, targetNode);
-                        neighbour.Parent = currentNode;
 
-                        if (!openSet.Contains(neighbour))
-                        {
-                            openSet.Add(neighbour);
-                        }
+                int newMovementCostToNeighbour = currentNode.GCost + GetDistance(currentNode, neighbour);
+                if (newMovementCostToNeighbour < neighbour.GCost || !openSet.Contains(neighbour))
+                {
+                    neighbour.GCost = newMovementCostToNeighbour;
+                    neighbour.HCost = GetDistance(neighbour, targetNode);
+                    neighbour.Parent = currentNode;
+
+                    if (!openSet.Contains(neighbour))
+                    {
+                        openSet.Add(neighbour);
                     }
                 }
             }
